@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply xl:max-w-[1200px];
+}
+
+.expertise-radio-box:checked ~ label {
+  @apply bg-primary text-white;
+}
+
+.vermogen-radio-box:checked ~ label {
+  @apply bg-primary text-white;
+}
+
+/* .hand-icon {
+  animation: hand 1s infinite;
+}
+
+@keyframes hand {
+  0%,
+  100% {
+    transform: translateX(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+} */
+
+.hand-icon {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    /* transform: rotate(14deg); */
+    transform: rotate(0deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  35% {
+    /* transform: rotate(-8deg); */
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  45% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}

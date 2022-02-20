@@ -810,8 +810,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
-.rounded-tr-\[50px\]{
-  border-top-right-radius: 50px;
+.rounded-tr-\[150px\]{
+  border-top-right-radius: 150px;
 }
 
 .border{
@@ -1270,6 +1270,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
+  .sm\:mr-8{
+    margin-right: 2rem;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -1345,10 +1349,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 4rem;
   }
 
-  .md\:mr-8{
-    margin-right: 2rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1383,11 +1383,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:rounded-tr-\[250px\]{
     border-top-right-radius: 250px;
-  }
-
-  .md\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .md\:pt-\[160px\]{
@@ -1506,6 +1501,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-\[80px\]{
